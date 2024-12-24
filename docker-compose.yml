@@ -1,0 +1,28 @@
+services:
+    nb:
+        image: project-nb
+        ports:
+        - "127.0.0.1:5000:5000"
+        volumes:
+        - "./nb:/nb"
+        deploy:
+                resources:
+                        limits:
+                                memory: 1g
+
+    nn:
+        image: project-nn
+        hostname: boss
+        deploy:
+                resources:
+                        limits:
+                                memory: 1g
+
+    dn:
+        image: project-dn
+        deploy:
+                replicas: 2
+                resources:
+                        limits:
+                                memory: 1g
+
