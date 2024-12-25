@@ -9,15 +9,24 @@ The project first attempts to understand and analyze the data in HDFS, then simu
 ## Questions 
 #### HDFS with two datanodes. 
 Q1: Check how many live DataNodes are in the cluster?
+
 Q2: What are the logical and physical sizes of the CSV files?
+
 Q3: What is the file status for single.csv?
+
 Q4: What is the location for the first block of single.csv?
+
 Q5: How are the blocks of single.csv distributed across the two DataNode containers?
+
 Q6: what are the first 10 bytes of single.csv?
+
 Q7: How many lines of single.csv contain the string "Single Family"?
+
 #### After killing one of the datanodes.
 Q8: How many live DataNodes are in the cluster?
+
 Q9: How are the blocks of single.csv distributed across the DataNode containers?
+
 Q10: How many times does the text "Single Family" appear in the remaining blocks of single.csv?
 
 ## Data Source
